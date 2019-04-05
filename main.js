@@ -43,12 +43,33 @@ const getFavoritePlaces = () => {
 };
 
 
-// const buttonEvents = (e) => {
+// const studentSort = () => {
+//     students.sort(function(a, b){
+//         if(a.name < b.name) { return -1; }
+//         if(a.name > b.name) { return 1; }
+//         return 0;  
+//     })
+// };
+const sortCards = (e) => {
+    console.log(e.target.id);
+    // let northAmerica = ;
+    // let europe = 
+    if (document.getElementById('northAmerica').id === e.target.id) {
+        alert('N america');       
+    } else if (document.getElementById('europe').id === e.target.id) {
+        alert('europe');
+    } else {
+        alert('help');
+    }
+};
 
-// }; 
+const buttonEvents = () => {
+    document.getElementById('northAmerica').addEventListener('click', sortCards);
+    document.getElementById('europe').addEventListener('click', sortCards);
+}; 
 
 const init = () => {
     getFavoritePlaces();
-    // buttonEvents();
+    buttonEvents();
 };
 init();
