@@ -9,14 +9,14 @@ const domStringBuilder = (arrayToPrint) => {
     console.log(arrayToPrint);
     let domString = ``;
     arrayToPrint.forEach((city) => {
-        domString += `<div class="">`;
-        domString += `  <h1 class="h1 header"></h1>`;
-        domString += `      <h5 class="h5">${city.cityName}</h5>`;
-        domString += `          <img class="" src="${city.cityImage}">`;
-        domString += `              <h4>${city.favoriteRestaurant}</h4>`;
-        domString += `              <h4>${city.favoriteBar}</h4>`;
-        domString += `              <h4>${city.favoriteHotel}</h4>`;
-        domString += `              <h4>${city.favoriteTouristAttraction}</h4>`;
+        domString += `<div class="col-3 myCards justify-content-center">`;
+        domString += `  <h1 class="h1 header text-center">${city.cityName}</h1>`;
+        domString += `      <h5 class="h5 text-center">${city.cityCountry}</h5>`;
+        domString += `          <img class="myImgs justify-content-center" src="${city.cityImage}">`;
+        domString += `              <p class="text-center">${city.favoriteRestaurant}</p>`;
+        domString += `              <p class="text-center">${city.favoriteBar}</p>`;
+        domString += `              <p class="text-center">${city.favoriteHotel}</p>`;
+        domString += `              <p class="text-center">${city.favoriteTouristAttraction}</p>`;
         domString += `</div>`;
     });
     printToDom('cardsDiv', domString);
