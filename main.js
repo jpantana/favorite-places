@@ -1,15 +1,14 @@
 let favoritePlacesArray = [];
-
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
 };
 
 const domStringBuilder = (arrayToPrint) => {
-    console.log(arrayToPrint);
+    // console.log(arrayToPrint);
     let domString = ``;
     arrayToPrint.forEach((city) => {
-        domString += `<div class="col-3 myCards justify-content-center">`;
+        domString += `<div class="col-3 myCards justify-content-center column">`;
         domString += `  <h1 class="h1 header text-center">${city.cityName}</h1>`;
         domString += `      <h5 class="h5 text-center">${city.cityCountry}</h5>`;
         domString += `          <img class="myImgs justify-content-center" src="${city.cityImage}">`;
@@ -23,10 +22,10 @@ const domStringBuilder = (arrayToPrint) => {
 };
 
 function loadFavoritePlaces() {
-    console.log('yay');
+    // console.log('yay');
     const data = JSON.parse(this.responseText);
     favoritePlacesArray = data.favoritePlaces;
-    domStringBuilder(data.favoritePlaces);
+    domStringBuilder(data.favoritePlaces);    
 };
 
 const loadFailure = () => {
@@ -42,13 +41,35 @@ const getFavoritePlaces = () => {
     myRequest.send();
 };
 
+const sortCards = (e) => {
+    console.log(favoritePlacesArray);
+    buttonId = e.target.id;
+    console.log(buttonId);
+    const northAmercianArray = [];
+    const europeArray = [];
+    favoritePlacesArray.forEach((place) => {
+        if (place.cityCont === buttonId) {
+            northAmercianArray.push(place);
+            domStringBuilder(northAmercianArray);
+            console.log(northAmercianArray);
+        } else if (place.cityCont === buttonId) {
+            europeArray.push(place);
+            domStringBuilder(europeArray);
+            console.log(europeArray);
+        } else if (buttonId === 'ALL') {
+            domStringBuilder(favoritePlacesArray);
+        }
+    }); 
+};
 
-// const buttonEvents = (e) => {
-
-// }; 
+const buttonEvents = () => {
+    document.getElementById('northAmerica').addEventListener('click', sortCards);
+    document.getElementById('europe').addEventListener('click', sortCards);
+    document.getElementById('ALL').addEventListener('click', sortCards);
+}; 
 
 const init = () => {
     getFavoritePlaces();
-    // buttonEvents();
+    buttonEvents();
 };
 init();
