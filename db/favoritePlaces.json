@@ -1,0 +1,68 @@
+{
+    "favoritePlaces": [
+        {
+            "cityName": "Prague",
+            "cityCountry": "Czech Republic",
+            "cityImage": "https://www.justapack.com/wp-content/uploads/2018/09/DSC1321-1100x618.jpg",
+            "favoriteRestaurant": "U Flecku",
+            "favoriteBar": "Hemingway Bar",
+            "favoriteHotel": "Prague Hotel",
+            "favoriteTouristAttraction": "Prague Castle"
+        },
+        {
+            "cityName": "Dubrovnik",
+            "cityCountry": "Croatia",
+            "cityImage": "https://blog.voyagestoantiquity.com/wp-content/uploads/2016/03/city-walls.jpg",
+            "favoriteRestaurant": "Taj Mahal",
+            "favoriteBar": "Buza Bar",
+            "favoriteHotel": "Sheraton Dubrovnik Riviera",
+            "favoriteTouristAttraction": "Old Town city walls"
+        },
+        {
+            "cityName": "Korcula",
+            "cityCountry": "Croatia",
+            "cityImage": "https://www.korculainfo.com/blog/wp-content/uploads/2017/12/korcula-old-town2.jpg",
+            "favoriteRestaurant": "U Flecku",
+            "favoriteBar": "Massimo",
+            "favoriteHotel": "Prague Hotel",
+            "favoriteTouristAttraction": "Gur Vineyards"
+        },
+        {
+            "cityName": "London",
+            "cityCountry": "England",
+            "cityImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg",
+            "favoriteRestaurant": "George's Portobello Fish Bar",
+            "favoriteBar": "Whiskey Exchange",
+            "favoriteHotel": "Copthorne Tara Hotel",
+            "favoriteTouristAttraction": "Westmisnter Abbey"
+        },
+        {
+            "cityName": "Cabo San Lucas",
+            "cityCountry": "Mexico",
+            "cityImage": "https://www.azamaraclubcruises.com/sites/default/files/heros/cabo-san-lucas-el-arco-de-cabo-san-lucas.jpg",
+            "favoriteRestaurant": "Flora Farms",
+            "favoriteBar": "Tequila",
+            "favoriteHotel": "Diamond Resort",
+            "favoriteTouristAttraction": "The Arch"
+        },
+        {
+            "cityName": "New York City",
+            "cityCountry": "United States",
+            "cityImage": "https://wp.zillowstatic.com/streeteasy/2/shutterstock_695847865-bcd2e5.jpg",
+            "favoriteRestaurant": "The Meatball Shop",
+            "favoriteBar": "Please Don't Tell",
+            "favoriteHotel": "Paramount Hotel",
+            "favoriteTouristAttraction": "Empire State Building"
+        },
+        {
+            "cityName": "Killarney",
+            "cityCountry": "Ireland",
+            "cityImage": "https://www.planetware.com/photos-large/IRL/ireland-killarney-dunloe.jpg",
+            "favoriteRestaurant": "Cronin's Restaurant",
+            "favoriteBar": "Any given pub",
+            "favoriteHotel": "Marriott",
+            "favoriteTouristAttraction": "Ring of Kerry"
+        }
+
+    ]
+}
